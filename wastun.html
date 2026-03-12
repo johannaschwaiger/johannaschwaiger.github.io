@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Stop Cybermobbing – Was tun?</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#dfe4f3;
+color:#222;
+}
+
+header{
+text-align:center;
+padding:40px;
+background:#ffffff;
+}
+
+h1{
+color:#e7a6a6;
+font-size:60px;
+margin:0;
+}
+
+.subtitle{
+color:#2f2b63;
+font-size:28px;
+font-weight:bold;
+margin-top:10px;
+}
+
+h2{
+color:#2f2b63;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:30px;
+}
+
+.section{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:10px;
+}
+
+ul{
+line-height:1.8;
+}
+
+button{
+background:#2f2b63;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#4440a0;
+}
+
+textarea{
+width:100%;
+height:120px;
+margin-top:10px;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.tipbox{
+display:none;
+margin-top:15px;
+background:#f3f4ff;
+padding:15px;
+border-radius:8px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+</style>
+
+<script>
+
+function showTips(){
+document.getElementById("tips").style.display="block";
+}
+
+function saveText(){
+let text=document.getElementById("story").value;
+if(text.length>0){
+alert("Danke fürs Teilen. Hilfe zu suchen ist wichtig und du bist damit nicht allein.");
+}
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>STOP!</h1>
+<h2>CYBERMOBBING</h2>
+<div class="subtitle">Was tun?</div>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Was du tun kannst</h2>
+
+<ul>
+<li>Nicht auf beleidigende Nachrichten reagieren.</li>
+<li>Screenshots als Beweise speichern.</li>
+<li>Person blockieren und melden.</li>
+<li>Mit einer Vertrauensperson sprechen.</li>
+<li>Unterstützung von Beratungsstellen holen.</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>Warum Hilfe wichtig ist</h2>
+
+<p>
+Cybermobbing kann sehr belastend sein. Wenn du mit anderen darüber sprichst,
+bekommst du Unterstützung und bist nicht allein. Erwachsene oder Beratungsstellen
+können helfen, das Problem zu melden und Lösungen zu finden.
+</p>
+
+</div>
+
+<div class="section">
+<h2>Hilfequellen</h2>
+
+<ul>
+<li>Eltern, Freunde oder Vertrauenspersonen</li>
+<li>Lehrer oder Schulsozialarbeiter</li>
+<li>📞 Nummer gegen Kummer: 116111</li>
+<li>🌐 www.nummergegenkummer.de</li>
+<li>🌐 www.juuuport.de</li>
+<li>🌐 www.klicksafe.de</li>
+<li>🌐 www.saferinternet.de</li>
+<li>Online-Meldefunktionen von Social Media Plattformen</li>
+<li>Schulpsychologische Beratung</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Interaktiver Bereich</h2>
+
+<p>Hier kannst du anonym aufschreiben, was passiert ist oder wie du dich fühlst.</p>
+
+<textarea id="story" placeholder="Schreibe hier deine Gedanken..."></textarea>
+
+<br><br>
+
+<button onclick="saveText()">Gedanken speichern</button>
+<button onclick="showTips()">Hilfetipps anzeigen</button>
+
+<div class="tipbox" id="tips">
+
+<b>Hilfreiche Schritte:</b>
+
+<ul>
+<li>Beweise sichern.</li>
+<li>Person blockieren.</li>
+<li>Beiträge melden.</li>
+<li>Mit jemandem darüber sprechen.</li>
+<li>Beratungsstellen kontaktieren.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+Gemeinsam gegen Cybermobbing
+</footer>
+
+</body>
+</html>
